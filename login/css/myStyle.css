@@ -1,0 +1,61 @@
+﻿.os{
+  background-color:#3578E5;
+  height:300px;
+  width:700px;
+  padding-top:57px;
+  padding-left: 50px;
+}
+
+
+
+.lwla{
+  background-color:orange;
+   height:185px;
+  width:250px;
+  float: left;
+   padding-left: 28px;
+   padding-top: 31px;
+
+}
+.tanya{
+  background-color:orange;
+   height:185px;
+  width:250px;
+ float: left;
+ margin-left: 81px;
+ padding-left: 28px;
+ padding-top: 31px;
+
+}
+
+.lwla_1{
+background-color:red;
+  height:122px;
+  width:188px;
+  padding-top: 27px;
+  padding-left: 30px;
+}
+
+.tanya_1{
+background-color:red;
+  height:122px;
+  width:188px;
+    padding-top: 27px;
+  padding-left: 30px;
+
+}
+
+
+.lwla_2{
+
+  background-color:#3578E5;
+  height: 70px;
+  width: 128px;
+}
+
+.tanya_2{
+background-color:#3578E5;
+  height: 70px;
+  width: 128px;
+}
+

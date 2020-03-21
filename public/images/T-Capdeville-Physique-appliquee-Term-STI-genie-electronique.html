@@ -1,0 +1,2028 @@
+<!doctype html>
+<html class="no-js" lang="fr-FR">
+
+<head>
+  <meta charset="utf-8">
+  
+  
+      <link rel="dns-prefetch" href="https://www.fnac.com">
+      <link rel="preload" href="https://www.fnac.com/static-proxy/kameleoon/script.js" as="script">
+      <script type="text/javascript">
+      var kameleoonIframeURL = "https://www.fnac.com/static-proxy/kameleoon/iframe.html";
+      var kameleoonIframeOrigin = "https://www.fnac.com";
+      var kameleoonStartLoadTime = new Date().getTime();
+      var kameleoonLoadingTimeout = 1000;
+      var kameleoonLightIframe = false;
+      if (!document.getElementById("kameleoonLoadingStyleSheet") && !window.kameleoonDisplayPageTimeOut)
+      {
+          var kameleoonS = document.getElementsByTagName("script")[0];
+          var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+          var kameleoonStn = document.createElement("style");
+          kameleoonStn.type = "text/css";
+          kameleoonStn.id = "kameleoonLoadingStyleSheet";
+          if (kameleoonStn.styleSheet)
+          {
+              kameleoonStn.styleSheet.cssText = kameleoonCc;
+          }
+          else
+          {
+              kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+          }
+          kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+          window.kameleoonDisplayPage = function(fromEngine)
+          {
+              if (!fromEngine)
+              {
+                  window.kameleoonTimeout = true;
+              }
+              if (kameleoonStn.parentNode)
+              {
+                  kameleoonStn.parentNode.removeChild(kameleoonStn);
+              }
+          };
+          window.setTimeout(function() {}, 25);
+          window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+      }
+      if (location.href.indexOf(kameleoonIframeOrigin) == -1)
+      {
+          kameleoonLightIframe = true;
+          var kameleoonProcessMessageEvent = function(event)
+          {
+              if (kameleoonIframeOrigin == event.origin)
+              {
+                  window.removeEventListener("message", kameleoonProcessMessageEvent);
+                  window.kameleoonExternalIFrameLoaded = true;
+                  if (window.Kameleoon)
+                  {
+                      try{
+                          //eval(event.data + "\n//# sourceURL=file:///kameleoon.js");
+                          eval(event.data + "\n//# sourceURL=data:application/javascript," + encodeURIComponent(event.data));
+                          Kameleoon.Analyst.load();
+                      }catch(error){
+                          console.error(error);
+                      }
+                  }
+                  else
+                  {
+                      window.kameleoonExternalIFrameLoadedData = event.data;
+                  }
+              }
+          };
+          if (window.addEventListener)
+          {
+              window.addEventListener("message", kameleoonProcessMessageEvent, false);
+          }
+          var iframeNode = document.createElement("iframe");
+          iframeNode.src = kameleoonIframeURL;
+          iframeNode.id = "kameleoonExternalIframe";
+          iframeNode.style = "float: left !important; opacity: 0.0 !important; width: 0px !important; height: 0px !important;";
+          document.head.appendChild(iframeNode);
+      }
+      </script>
+      <script type="text/javascript" src="https://www.fnac.com/static-proxy/kameleoon/script.js" async></script>
+      
+
+    <link rel="icon" type="image/ico" href="https://www.fnac.com/assets/images/favicon/favicon.ico?static-sf=BqwDZfr9etd-yMfOzYpwqcHoUsU1">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.fnac.com/assets/images/favicon/favicon-16x16.png?static-sf=uSl_jpZ5PFvSlKNfB788eHLRlwM1">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.fnac.com/assets/images/favicon/favicon-32x32.png?static-sf=6fj_L3FzA1TiwZnDnoGIw9D4oP01">
+  <link rel="icon" type="image/ico" sizes="64x64" href="https://www.fnac.com/assets/images/favicon/favicon-64x64.ico?static-sf=90WAMQwzoikT3Ow9XoNmOfwYsPY1">
+  <link rel="apple-touch-icon" href="https://www.fnac.com/assets/images/favicon/apple-touch-icon.png?static-sf=YX78PIgBuyaSK3F92lGfE4HLJPI1">
+  <link rel="mask-icon" href="https://www.fnac.com/assets/images/favicon/safari-pinned-tab.svg?static-sf=1sJLbAR8l_q5OlJCiBSntHRi-iA1" color="#5bbad5">
+
+
+  
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#E1A925">
+
+<meta name="msvalidate.01" content="DA361407407072F944FEC313FFFB02E4">
+
+
+<meta name="secure-url" content="https://secure.fnac.com">
+<meta name="pathname" content="">
+<meta name="culture" content="fr-FR">
+
+
+
+  
+
+
+
+<script type="application/json" class="js-configuration">
+  {"isSocialConnect":false,"pathname":"","webpackPublicPath":"https://www.fnac.com/Assets/dist/","secureURL":"https://secure.fnac.com","cookiesHostname":".fnac.com","cookiesPath":"/","isMobile":false,"isMobileApplication":false,"isUserIdentified":false,"searchIncludeFnacSpectacle":true,"fnacSpectacleURL":"http://www.fnacspectacles.com/","fnacSpectacleSearchTemplateURL":"http://www.fnacspectacles.com/recherche/rechercheAjax.do","searchFnacSpectacleMaxShows":1,"isFnacPro":false,"locale":"fr-FR","lang":"fr","region":"FR","currency":"EUR","currencyHTML":"&euro;","cartViewURL":"https://secure.fnac.com/basket/view","cartAddURL":"https://secure.fnac.com/basket/add","cartOneClickURL":"https://secure.fnac.com/basket/oneclick","loginURL":"https://secure.fnac.com/identity/gateway/signin?LogonType=Standard&PageAuth=X&pagepar=&PageRedir=https%3a%2f%2fwww.fnac.com%2fArticle%2fIndex%2f1726468%2f1","createAccountURL":"https://secure.fnac.com/identity/gateway/signup?LogonType=StandardCreation&PageRedir=http%3a%2f%2flivre.fnac.com%2fa1726468%2fT-Capdeville-Physique-appliquee-Term-STI-genie-electronique","reauthURL":"https://secure.fnac.com/identity/gateway/session-expired","apiAuth":"Basic 23A17F49D34DE16BC85AB395F","localStorageIFrameURL":"https://www.fnac.com/nav/core/static/localstorage.html?static-sf=Y_GBzkR1fFz87mVB9wldmol7FFw1","symbolsURL":"https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1","serviceWorkerURL":"https://www.fnac.com/assets/dist/javascripts/service-worker-main-bundle.js?static-sf=LMr8W_ZwB-Ix5Ku4dGthndR4ZNk1","searchAutoCompleteURL":"https://autocomplete-fr.ws.fnac.com/search-autocomplete/autocomplete?client=1&length=50_33_33_40&limit=6_5_4_2&method=GetCommonSuggest","searchAutoCompleteGroups":[{"name":"Produits","type":"p","order":2},{"name":"Suggestions de mots clés","type":"s","order":0},{"name":"Voir les rayons","type":"m","order":3},{"name":"Billetterie","type":"bil","order":1}],"putValuationTemplateURL":"//Webservices/Perso/default.asmx/PutValuation?ArticleId={articleId}&UserId={userId}&Valuation={valuation}","putRelationTemplateURL":"//Webservices/Perso/default.asmx/PutRelation?ArticleId={articleId}&UserId={userId}&RelationId={relationId}","excludeFromAdvicesTemplateURL":"//Webservices/Perso/default.asmx/ExcludeFromAdvices?ArticleId={articleId}&UserId={userId}","putInterestRelationTemplateURL":"//Webservices/Perso/default.asmx/PutInterestRelation?NodeId={nodeId}&UserId={userId}&RelationId={relationId}","deleteInterestRelationTemplateURL":"//Webservices/Perso/default.asmx/DeleteInterestRelation?NodeId={nodeId}&UserId={userId}","productSendReviewsFeedbackURL":"/api/product/v1/SendReviewsFeedback","favoriteStoreURL":"/api/v1/nav/user/store","geocodingCacheTemplateURL":"/api/reference/rest/v2/geocoding/{term}","setNearStoreURL":"/api/common/v1/SetNearStore","compareAddTemplateURL":"/api/v1/nav/comparator/add/{catalog:int}/{prid:int}/{comparatorValues?}","compareDeleteTemplateURL":"/api/v1/nav/comparator/delete/{catalog:int}/{prid:int}/{comparatorValues?}","compareDeleteAllTemplateURL":"/api/v1/nav/comparator/deleteall/{comparatorValues?}","compareGetTemplateURL":"/api/v1/nav/comparator/get/{comparatorValues}","compareTemplateURL":"https://www.fnac.com:443/comparer/{comparatorValues?}","getWishlistsURL":"https://secure.fnac.com/api/customer/rest/v4/wishlists/","addWishlistItemTemplateURL":"https://secure.fnac.com/api/customer/rest/v4/wishlists/{wishlistPublicId}/{prid}-{catalog}/{offerReference?}","deleteWishlistItemTemplateURL":"https://secure.fnac.com/api/customer/rest/v4/wishlists/{wishlistPublicId}/{prid}-{catalog}","createWishlistURL":"https://secure.fnac.com/api/customer/rest/v4/wishlists/","myAccountWishlistTemplateURL":"https://secure.fnac.com:443/account/wishlist/{wishlistPublicId?}","productData":{"title":"Physique appliquée Term STI génie électronique","parentId":"","parentPrid":"","id":"1726468","prid":"1726468","catalog":1,"offerId":"b1c4f167-c7c7-f2d3-da6f-48196109df62","serviceId":null,"packProductId":null,"images":[{"thumb":"https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1502-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg","image":"https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1540-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg","zoom":"https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1507-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg"}]}}
+</script>
+<script type="application/json" class="js-translations">
+  {"core.common.header.search.showtickets":"Voir les résultats Billetterie","front.core.views.product.author.comments.apreciation.star1":"Très déçu","front.core.views.product.author.comments.apreciation.star2":"Déçu","front.core.views.product.author.comments.apreciation.star3":"Moyen","front.core.views.product.author.comments.apreciation.star4":"Bien","front.core.views.product.author.comments.apreciation.star5":"Super !","front.core.views.product.review.forceweakness.required.error.message":"Le point fort et l'inconvénient sont requis.","core.wishlist.layout.title":"Mes listes","core.wishlist.layout.title2":"Nouvelle liste","core.product.header.main.maincontrolbottom.marketplace.brandoffers.seeoffer":"Voir l'offre","core.product.header.main.maincontrolbottom.marketplace.shippinginfo.onstock":"En stock","nav.core.compare.banner.show":"Voir le comparateur","nav.core.compare.banner.hide":"Masquer le comparateur","nav.core.compare.action.start":"Comparer","nav.core.compare.action.end":"Tout supprimer","nav.core.compare.action.add":"Comparer","nav.core.compare.action.added":"Ajouté au comparateur","nav.core.compare.action.added.short":"Ajouté","wishlist.popinheader.confirm":"Votre produit a bien été ajouté à la liste","mobile.account.nav.wishlist":"Voir mes listes","wishlist.popinheader.button.create":"Créer","wishlist.popinheader.button.addtowishlist":"Ajouter à la liste","mobile.fa.popin.wishlist.authentybuttontext":"Me connecter","desktop.account.logon.createaccount":"Créer un compte","wishlist.popinheader.button.tooltipadded":"Ajouté à la liste :","core.common.htmlfooter.flashmessage":"Attention","core.common.htmlfooter.flashmessage-title":"Une erreur est survenue, veuillez réessayer plus tard.","core.product.header.left.buttons.alert.title":"Recevoir une alerte","core.product.header.left.buttons.alert.text":"Abonnez-vous à ce produit pour être alerté(e) avant tout le monde d'une baisse de prix, d'une promo exceptionnelle, ou de sa disponibilité en stock...","core.product.header.left.buttons.alert.valid":"<span class=\"icon icon_i_102_check_03\">Ajouté aux alertes</span>","core.product.header.left.buttons.alert.btnconfirm":"<span class=\"tool-btn confirmAlert\">M'alerter</span>","front.common.searchhistory.latest":"Vos dernières recherches","front.common.searchhistory.clear":"Effacer","front.core.views.seller.professional.topvendor.popover.title":"TOP VENDEUR","front.core.views.seller.professional.topvendor.popover.criteria":"Les critères d'évaluation :","front.core.views.seller.professional.topvendor.popover.highrating":"- Une note élevée","front.core.views.seller.professional.topvendor.popover.quickanswers":"- Des réponses rapides","front.core.views.seller.professional.topvendor.popover.quality":"- Un traitement qualitatif","front.core.views.seller.professional.topvendor.popover.readmore.link":"https://www.fnac.com/Guides/marketPlace/vendeurs-partenaires-fnac/default.aspx","front.core.views.seller.professional.topvendor.popover.readmore":"En savoir plus","front.core.views.product.fa.webbuybox.kobopopin.title":"","front.core.views.product.fa.webbuybox.kobopopin.content":"","front.core.views.product.fa.blocprice.multiformat.ebook":"Ebook","front.core.views.product.fa.webbuybox.kobopopin.link":"","front.core.views.product.fa.webbuybox.basket.addedtocart":"Dans le panier !"}
+</script>
+
+    <script>
+    /*! For license information please see inline-common-bundle.js.LICENSE.txt */
+!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}({0:function(e,t,n){n("gUgK"),e.exports=n("pkXr")},gUgK:function(e,t,n){Array.prototype.slice.call(document.getElementsByClassName("js-configuration")).forEach(function(e){try{n.p=n.p||JSON.parse(e.text).webpackPublicPath}catch(e){console.error(e)}})},pkXr:function(e,t,n){"use strict";n.r(t);var r="function"==typeof window.MutationObserver&&Function.prototype.toString.call(MutationObserver).indexOf("[native code]")>=0&&window.MutationObserver||function(e,t){t=void 0===t?150:t;var n=null,r=[];return{observe:function(){n||(n=setInterval(e.bind(null,r,this),t))},disconnect:function(){clearInterval(n),n=null},takeRecords:function(){return r}}};function o(e){var t=e.media||"all";function n(){e.media=t,e.setAttribute("onload",null),e.removeEventListener("load",n),clearTimeout(r)}e.addEventListener("load",n),setTimeout(function(){e.rel="stylesheet",e.media="only x"});var r=setTimeout(n,3e3)}var i="preloaded:"+Math.random();function a(){for(var e=0;e<c.length;e++){var t=c[e];t[i]||"preload"!==t.rel||"style"!==t.getAttribute("as")||(t[i]=!0,o(t))}}var c=document.getElementsByTagName("link"),u=!1;try{u=document.createElement("link").relList.supports("preload")}catch(e){}if(!u){a();var s=document.documentElement;new r(a,400).observe(s,{childList:!0,subtree:!0,attributes:!0})}function l(e){var t=e.target.responseText;if(!(e.target.status>=400)&&t){window.CSS&&CSS.supports("(--f:f)")||(t=t.replace(/var\(\s*--[^)]*?\s*,\s*([^\n\r)\]}!]+)\s*\)/gi,"$1"));var n=document.implementation.createHTMLDocument("");n.body.innerHTML=t;var r=n.body.firstElementChild;r&&"svg"===r.tagName.toLowerCase()&&(r.setAttribute("aria-hidden","true"),r.style.cssText="visibility:hidden;position:fixed;width:0;height:0;overflow:hidden",document.adoptNode(r),document.body.insertBefore(r,document.body.firstChild))}}function d(e,t){if(v.indexOf(e)<0){v.push(e);var n=new XMLHttpRequest;n.addEventListener("load",l);try{n.open("GET",e),n.send()}catch(e){console.error(e)}}return t}function f(){for(var e=0;e<m.length;e++){var t=m[e],n=t.getAttribute("xlink:href");if(null!==n&&"#"!==n.charAt(0)){var r=n.split("#"),o=d(r[0],r.slice(1).join("#"));t.setAttribute("xlink:href","#"+o)}}}var m=document.getElementsByTagName("use"),v=[],p=document.documentElement;new r(f).observe(p,{childList:!0,subtree:!0,attributes:!0}),f();var h={};try{h=JSON.parse(document.getElementsByClassName("js-configuration")[0].text)}catch(e){console.error(e)}document.documentElement.classList.remove("no-js");for(var g=["(pointer: coarse)","(hover: none)","(-moz-touch-enabled)"],b=null,y=0;y<g.length;y++){var w=matchMedia(g[y]);"not all"!==w.media&&(b=b||w.matches)}var x=null!==b?b:"ontouchstart"in window||window.TouchEvent||window.DocumentTouch&&document instanceof DocumentTouch;function E(){var e,t=h.serviceWorkerURL;try{e=JSON.parse(localStorage.getItem("service-worker-dependencies"))}catch(e){}return Array.isArray(e)&&e.length>0&&(e.sort(function(e,t){return e.containerID===t.containerID?e.order-t.order:e.containerID<t.containerID?-1:1}),t+=(t.indexOf("?")<0?"?":"&")+e.map(function(e){return"dependency="+encodeURIComponent(e.uri)}).join("&")),navigator.serviceWorker.register(t,{scope:h.pathname+"/",updateViaCache:"all"})}function O(e){return e.catch(function(e){console.error(e instanceof DOMException?"DOMException ("+e.name+" "+e.code+"): "+e.message:e)})}document.documentElement.classList.add(x?"touchevents":"no-touchevents"),"serviceWorker"in navigator?O(E().then(function(e){window.addEventListener("serviceworkerdependencieschange",function(){O(E())})})):"http:"===location.protocol?console.warn("Service worker require HTTPS"):console.warn("Service worker is not supported")}});
+//# sourceMappingURL=https://www.fnac.com/Assets/dist/javascripts/inline-common-bundle.js.map
+  </script>
+
+  
+  
+      <script src="https://www.fnac.com/assets/dist/javascripts/desktop-vendors-bundle.js?static-js=lX7MokXt9dOOBnNH3RMxXvUbXZ01" defer></script>
+
+      <script src="https://www.fnac.com/assets/dist/javascripts/desktop-product-bundle.js?static-js=0FXw6GQ9TnowxpSE4n5lZBSau3w1" defer></script>
+
+
+  
+  <script src="https://www.fnac.com/static-proxy/earlybirds/script_custom.js" defer></script>
+
+  
+
+    <script>window.augment = window.augment || { initForProduct: function () { augment.q.push(["initForProduct", arguments]) }, q: [] }</script>
+    <script data-augment-config='{"id":"cf8491a8c623b070246ff9c66148e496cc0b9f1206cf469985ae4d48bc0a4efe","key":"3a0aba6645b25aab9d628ac5356d1d50c88c0788ad878b25766dc98b46727236"}' src="https://cdn.augment.com/web-sdk/0.5/augment.js" defer></script>
+    <script src="https://cdn.augment.com/web-sdk/0.5/web_viewer_dependencies.js" defer></script>
+
+
+  
+
+  <link rel="preload" href="https://www.fnac.com/assets/fonts/roboto-300.woff2?static-sf=c0b3DQDHNLHEU2oMcv-KpO1J9mc1" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://www.fnac.com/assets/fonts/roboto-400.woff2?static-sf=HrVy0CPxU4nOCqS8VP3SjJ9xciM1" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://www.fnac.com/assets/fonts/roboto-700.woff2?static-sf=xDRHRoluRS5fTvRXgfYig2kQrkY1" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://www.fnac.com/assets/fonts/icons.woff2?static-sf=QUMOrhKVCwOTjhoFmtnAJKqJQuU1" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://www.fnac.com/assets/dist/css//desktop-common-bundle.css?static-css=NN_kdG5aQiQcIrz_9d4ONjIGAi81">
+
+
+  
+  
+      <link rel="stylesheet" href="https://www.fnac.com/assets/dist/css/desktop-product-bundle.css?static-css=sPxT6G3OWi6t4h2vNSm8NmwP1Bg1">
+
+
+
+  
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="msvalidate.01" content="DA361407407072F944FEC313FFFB02E4">
+        <meta name="cart-view-url" content="https://secure.fnac.com/basket/view">
+        <meta name="cart-add-url" content="https://secure.fnac.com/basket/add">
+        <meta name="cart-oneclick-url" content="https://secure.fnac.com/basket/oneclick">
+        <meta name="social-connect" content="false">
+        <meta name="secure-url" content="https://secure.fnac.com/">
+        <meta name="login-url" content="https://secure.fnac.com/identity/gateway/signin?LogonType=Standard&amp;PageAuth=X&amp;pagepar=&amp;PageRedir=https%3a%2f%2fwww.fnac.com%2fArticle%2fIndex%2f1726468%2f1">
+        <meta name="images-url" content="https://www.fnac.com/Legacy/Img/">
+        <meta name="pathname" content="">
+        <meta name="cookies-path" content="/">
+        <meta name="cookies-hostname" content=".fnac.com">
+        <meta name="mobile-device" content="False">
+        <meta name="mediaelement-swf-url" content="https://www.fnac.com/nav/js/vendors/flashmediaelement.swf?static-sf=heh404_3Rr0r-n0t_F0Und_12501">
+        <meta name="localstorageiframe" content="https://www.fnac.com/nav/core/static/localstorage.html?static-sf=Y_GBzkR1fFz87mVB9wldmol7FFw1">
+        <meta name="doublerun" content="fjs">
+        <meta name="doublerun-call" content="cfls">
+      <meta name="description" content="Physique appliqu&#233;e Term STI g&#233;nie &#233;lectronique, T. Capdeville, Ellipses. Des milliers de livres avec la livraison chez vous en 1 jour ou en magasin avec -5% de r&#233;duction .">
+      <title>Physique appliqu&#233;e Term STI g&#233;nie &#233;lectronique - broch&#233; - T. Capdeville - Achat Livre | fnac</title>
+      <link rel="canonical" href="https://livre.fnac.com/a1726468/T-Capdeville-Physique-appliquee-Term-STI-genie-electronique">
+      <script type="application/ld+json">
+        {"@context":"http://schema.org/","@type":"Product","name":"Physique appliquée Term STI génie électronique","image":"https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1540-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg","description":"Dans les ouvrages de la collection CONTRÔLE CONTINU vous trouverez :\n\u0007 des résumés de cours, pour réviser rapidement\n\u0007 des exercices corrigés, variés et progressifs pour vous entraîner et tester vos connaissances\n\u0007 des problèmes avec résolution pour se préparer efficacement aux contrôles écrits de votre classe.","gtin13":"9782729824686","prid":1726468,"sku":"1452214","url":"https://livre.fnac.com/a1726468/T-Capdeville-Physique-appliquee-Term-STI-genie-electronique","mainEntityOfPage":"https://livre.fnac.com/a1726468/T-Capdeville-Physique-appliquee-Term-STI-genie-electronique","aggregateRating":{"@type":"AggregateRating","ratingValue":5.0,"ratingCount":3},"offers":{"@type":"Offer","priceCurrency":"EUR","price":27.72,"availability":"http://schema.org/InStock","itemCondition":"http://schema.org/UsedCondition","seller":{"@type":"Organization","name":"Le Lieu Bleu"}},"additionalType":"Book","author":[{"@type":"Person","name":"T. Capdeville","url":"https://www.fnac.com/ia578286/T-Capdeville"}]}
+      </script>
+  <meta name="google" content="notranslate">
+
+
+  
+
+
+  
+  
+</head>
+<body>
+  
+
+<div class="non-legacy">
+
+  
+
+  <header class="Header Header--new js-Header  ">
+
+    <div class="Header__nav">
+      
+      <div class="Header__burger js-Burger-toggler">
+        <button type="button" class="Header__burger-link js-SlideNav-toggler">
+          <span class="Header__burger-icon">
+            <span class="Header__burger-line1"></span>
+            <span class="Header__burger-line2"></span>
+            <span class="Header__burger-line3"></span>
+            <span class="Header__burger-line4"></span>
+          </span>
+          <span class="Header__burger-icon__subtitle">Rayons</span>
+        </button>
+      </div>
+
+      
+      <a href="https://www.fnac.com/" class="Header__logo">
+        <span class="Header__logo-img"></span>
+        <span class="Header__logo-title">fnac.com</span>
+      </a>
+    </div>
+
+    <div class="Header__main js-headerSearchView">
+
+      <div class="Header__search js-Header-search">
+        
+<form accept-charset="UTF-8" action="https://www.fnac.com/SearchResult/ResultList.aspx" method="GET" name="QuickSearchForm" id="QuickSearchForm">
+  <div class="Header__search-aisle">
+    <div class="Header__aisle">
+      <select id="category" name="SCat" class="Header__search-dropdown--hidden js-Header__search-dropdown" style="display:none;">
+        <option value="0!1">Rayons</option><option value="8!1">Informatique</option><option value="2!1">Livres, BD</option><option value="34!1">Téléphonie</option><option value="22!1">Ebooks</option><option value="35!1">Photo, Caméra</option><option value="1!1">Livres en VO</option><option value="36!1">Son, Hi-fi</option><option value="16!1">Billetterie</option><option value="32!1">TV, Vidéo</option><option value="3!1">Musique</option><option value="38!1">Sport</option><option value="4!1">Films et Séries</option><option value="23!1">Maison</option><option value="5!1">Jeu vidéo</option><option value="39!1">Bricolage</option><option value="7!1">Enfant, Jouet</option><option value="40!1">Jardin</option><option value="25!1">Coffret Cadeau</option><option value="42!1">Bagagerie</option><option value="14!1">Papeterie</option><option value="37!1">Erotisme</option><option value="11!1">Gadget</option><option value="41!1">Animalerie</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="Header__search-form">
+    <div class="Header__search-fields">
+      
+        <input type="search" class="Header__search-input js-HeaderSearch-input js-searchbar-input" autocorrect="off" spellcheck="false" autocapitalize="off" id="Fnac_Search" name="Search" value="" placeholder="Rechercher">
+      
+
+      <input type="hidden" name="sft" value="1" />
+      <input type="hidden" name="sa" id="QuickSearchFormSa" value="0" />
+      <input type="hidden" name="omnsearchtype" id="quicksearch-history-type" disabled value="History">
+
+      <svg class="f-icon Header__search-cross js-HeaderSearch-inputClear" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_038_cross_02"></use>
+</svg>
+
+
+      <button class="Header__search-submit btSubmit js-btSubmit" type="submit" title="Lancer la recherche" aria-label="Lancer la recherche">
+      </button>
+    </div>
+  </div>
+</form>
+
+      </div>
+
+      <div class="Header__tabs-wrapper">
+        <div class="Header__tabs js-HeaderTabs">
+
+          <div class="Header__tabs-item Header__tabs-item--help js-HeaderTabHelp">
+            
+
+<a href="#" class="Header__tabs-link Header__tabs-link--help js-HeaderTab-toggle" data-panel="help" data-header-tab="help" data-track-click='{"action":"ShowHeaderLayer","label":"Layer: Fnac vous aide"}'>
+  <div class="Header__tabs-icon Header__tabs-icon--help"></div>
+</a>
+
+          </div>
+
+          
+
+          <div class="Header__tabs-specific-wrapper">
+
+            
+            <div class="Header__tabs-item Header__tabs-item--store js-StoreContainer js-HeaderTabStore">
+              
+    <a  class="Header__tabs-link Header__tabs-link--store js-HeaderTab-toggle" data-panel="store-gen" data-header-tab="store" href="https://www.fnac.com/localiser-magasin-fnac/w-4" data-track-click='{"action":"ShowHeaderLayer","label":"Layer: Magasins"}'>
+        <div class="Header__tabs-icon Header__tabs-icon--store"></div>
+        <div class="Header__tabs-title">
+          <span class="Header__tabs-firstline">Magasins</span>
+        </div>
+    </a>
+
+            </div>
+            
+
+            <div class="Header__tabs-item Header__tabs-item--account js-HeaderTabAccount">
+              
+<a class="Header__tabs-link Header__tabs-link--account js-HeaderTab-toggle" data-header-tab="account" data-usertype="unconnected" href="https://secure.fnac.com/account/personal-information?LogonType=StandardCreation&PageRedir=https%3a%2f%2fwww.fnac.com%2f" data-track-click='{"action":"ShowHeaderLayer","label":"Layer: Mon Compte: Connection"}'>
+
+    <div class="Header__tabs-icon Header__tabs-icon--account"></div>
+    <div class="Header__tabs-title">
+        <span class="Header__tabs-firstline">Me connecter</span>
+    </div>
+</a>
+
+            </div>
+
+            <div class="Header__tabs-item Header__tabs-item--basket js-HeaderTabBasket">
+              
+      <a class="Header__tabs-link Header__tabs-link--basket HeaderTab-control HeaderTab-control--basket js-HeaderTab-toggle" data-header-tab="basket" href="https://secure.fnac.com/orderpipe?pipe=pop&reset=1" rel="nofollow" data-track-click='{"action":"ShowHeaderLayer","label":"Layer: Mon Panier"}'>
+        <div class="Header__tabs-icon Header__tabs-icon--basket">
+          
+          <span class="Header__tabs-cartCount Header__tabs-cartCount--empty js-CartCount " data-maxlabel="99+"></span>
+        </div>
+
+        <div class="Header__tabs-title">
+          <span class="Header__tabs-firstline">
+            Mon panier
+          </span>
+        </div>
+      </a>
+
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="Main-exitMenu Main-exitMenu--inverse js-Main-exitSideBar"></div>
+  <div class="Main-exitMenu js-Main-exitSlideNav"></div>
+  <div class="Header__layers-item js-HeaderTab-content"></div>
+  <div class="CategoryNav-wrapper js-CategoryNav-wrapper"></div>
+
+  
+  <div class="Main-marketingHeader">
+    
+
+<!--PageBuilder:marketing_header-->
+
+    <div class="promo js-scrollPasteToolbar">
+        <ul class="promo-List promo-List--list5">
+            
+
+<li class="promo-ListItem">
+    <a class="promo-ListItemLink" href="https://www.fnac.com/Ventes-Flash/shi42245/w-4#bl=marktlink1">
+        <img alt="" class="promo-ListItemImg" height="20" src="https://static.fnac-static.com/fr-FR/fch/01/img/1f39816e-1564-4e99-9d70-bd48b6cdd4ab.png" width="20">
+        <span class="promo-ListItemLabel"><span class="txt-bold txtColor-Rouge"> Ventes Flash -50% </span>  </span>
+    </a>
+</li>
+
+
+<li class="promo-ListItem">
+    <a class="promo-ListItemLink" href="https://www.fnac.com/Plein-air/#bl=marktlink2">
+        <img alt="" class="promo-ListItemImg" height="22" src="https://static.fnac-static.com/fr-FR/fch/01/img/7ce3527b-d338-4f48-81e7-07490080a0e9.png" width="22">
+        <span class="promo-ListItemLabel">Beaux Jours</span>
+    </a>
+</li>
+
+
+<li class="promo-ListItem">
+    <a class="promo-ListItemLink" href="https://livre.fnac.com/s22926/Petits-prix-et-bonnes-affaires#bl=marktlink3">
+        <img alt="" class="promo-ListItemImg" height="20" src="https://static.fnac-static.com/fr-FR/fch/01/img/8479f31e-eced-4a0a-b793-298118a0fa8e.png" width="20">
+        <span class="promo-ListItemLabel">3 pour 2 Livres</span>
+    </a>
+</li>
+
+
+<li class="promo-ListItem">
+    <a class="promo-ListItemLink" href="https://livre.fnac.com/s233044/Un-ete-tres-livre#bl=marktlink4">
+        <img alt="" class="promo-ListItemImg" height="22" src="https://static.fnac-static.com/fr-FR/fch/01/img/e4ed8561-7731-44a0-b08c-4f9c071ea10f.png" width="22">
+        <span class="promo-ListItemLabel">Un été très livre</span>
+    </a>
+</li>
+
+
+<li class="promo-ListItem">
+    <a class="promo-ListItemLink" href="https://www.fnac.com/choisir-carte#bl=marktlink5">
+        <img alt="" class="promo-ListItemImg" height="22" src="https://static.fnac-static.com/fr-FR/fch/01/img/6516efdb-bff1-44b9-affb-ac2e15888d8c.png" width="22">
+        <span class="promo-ListItemLabel">Avantages Adhérents</span>
+    </a>
+</li>
+
+        </ul>
+    </div>
+
+<!--/PageBuilder-->
+
+  </div>
+
+  
+  <div class="SlideNav nano">
+    <div class="nano-content ScrollWrapper SlideNav-loadWrapper"></div>
+  </div>
+</div>
+  <div class="Main Main--fullWidth">
+    
+
+
+  <div class="f-productPage clearfix js-articleView" data-prid="1726468" data-ean13="9782729824686" data-catalog="1">
+    <div class="productPageTop">
+      
+
+
+
+<section class="f-productHeader js-articleHeader">
+
+  
+  <ul class="f-breadcrumb">
+        <li class="f-breadcrumb-item">
+          <a class="f-breadcrumb-link" href="https://www.fnac.com/">Accueil</a>
+        </li>
+        <li class="f-breadcrumb-item">
+          <a class="f-breadcrumb-link" href="https://www.fnac.com/livre.asp">Livre</a>
+        </li>
+        <li class="f-breadcrumb-item">
+          <a class="f-breadcrumb-link" href="https://livre.fnac.com/s1891/Scolaire-et-soutien-scolaire">Scolaire et soutien scolaire</a>
+        </li>
+        <li class="f-breadcrumb-item">
+          <a class="f-breadcrumb-link" href="https://livre.fnac.com/s93088/Scolaire-et-soutien-scolaire/Lycee-Enseignement-Technologique">Lyc&#233;e Enseignement Technologique</a>
+        </li>
+  </ul>
+
+  
+  <h1 class="f-productHeader-Title">
+    Physique appliqu&#233;e Term STI g&#233;nie &#233;lectronique
+  </h1>
+
+
+
+  
+  <div class="f-productHeader-additionalInformation f-productHeader-subTitle">
+              <span class="f-productHeader-subTitleLabel">T. Capdeville</span>
+                <span class="f-productHeader-subTitleLabel">Paru en septembre 2005</span>
+            <span class="f-productHeader-subTitleLabel">Scolaire / Universitaire (broché)</span>
+  </div>
+
+  <div class="f-productHeader-reviewContainer">
+
+        
+        <div class="f-productHeader-additionalInformation f-productHeader-review">
+            <span class="f-stars js-articleBestReview-show" data-prid="1726468" data-id="1726468" data-ean="9782729824686" data-referecencegu="1452214" data-catalog="1">
+                    <span class="f-star f-star--large S5">5</span>
+                                    <span class="f-productHeader-reviewLabel">3 avis</span>
+                                <span class="tooltipReview js-articleBestReview-container"></span>
+            </span>
+
+    </div>
+
+    
+          <div class="f-productHeader-additionalInformation f-productHeader-bookstoreFavorites">
+      </div>
+
+    
+  </div>
+</section>
+
+      <div class="f-productPage-colLeft clearfix">
+
+
+
+<section class="f-productVisuals js-articleVisuals">
+
+  
+
+  
+  <div class="whide " style="display: inline-block; width: 120px; vertical-align: top;">
+    <ul class="" style="list-style: none; padding :0; margin:0;"></ul>
+  </div>
+  
+  <div class="f-productVisuals-thumbnailsWrapper">
+    <ul class="f-productVisuals-thumbnails js-productVisuals-thumbnails ">
+            <li class="f-productVisuals-thumbnail js-articleVisuals-item" data-type="image" data-src="https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1540-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg" data-src-zoom="https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1507-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg">
+              <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1502-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg" width="47" height="47" alt="Physique appliqu&#233;e Term STI g&#233;nie &#233;lectronique_0">
+            </li>
+            <li class="f-productVisuals-thumbnail f-productVisuals-thumbnail-3D" id="web-viewer-button">
+
+      </li>
+
+    </ul>
+  </div>
+  
+  <div class="f-productVisuals-main js-articleVisuals-main">
+    <div class="" style="position: relative; width: 100%; cursor: pointer;">
+      <svg class="f-icon f-productVisuals-main-iconZoom" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_011_search"></use>
+</svg>
+
+          <img class="f-productVisuals-mainMedia js-ProductVisuals-imagePreview" src="https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1540-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg" alt="Physique appliqu&#233;e Term STI g&#233;nie &#233;lectronique">
+          </div>
+  </div>
+  <div class="f-productVisuals-3D" id="web-viewer-canvas" style="display:none;"></div>
+</section>
+
+
+<div class="f-mfp-content mfp-hide f-productVisuals-zoomBox js-articleVisuals-zoomBox"></div>
+
+
+
+  <section class="f-productToolbar js-articleToolbar js-userNotConnected"
+           data-price="11,2" data-prid="1726468"
+           data-catalog="1"
+           data-ref="1"
+           data-offer-id="b1c4f167-c7c7-f2d3-da6f-48196109df62">
+        
+    <button class="ff-button ff-button--grey ff-button--outline ff-button--opaque ff-circle--medium js-share-modal-bt f-toolbarButton"
+            type="button"
+            title="Partager"
+            data-email-subject="J’ai pensé que cet article pourrait t’intéresser"
+            data-email-body="Bonjour,
+
+Je viens de découvrir sur Fnac.com cet article qui pourrait t’intéresser :
+
+http://livre.fnac.com/a1726468/T-Capdeville-Physique-appliquee-Term-STI-genie-electronique
+
+A bientôt,">
+      <svg class="f-icon f-productToolbar-icon f-productToolbar-icon-share" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_096_Share"></use>
+</svg>
+
+    </button>
+
+    
+    
+
+
+
+
+<div id="sellYoursPopinTemplate" class="f-sellYours-popin f-mfp-content mfp-hide">
+     <div class="f-sellYours">
+    <i class="f-sellYours-icon icon icon_i_219_resell"></i>
+    <h3 class="f-sellYours-title">
+      Revendez le vôtre : <span class="f-sellYours-titleArticle">Physique appliqu&#233;e Term STI g&#233;nie &#233;lectronique</span> en quelques clics seulement,<br>sur fnac.com
+    </h3>
+    <ol class="f-sellYours-process">
+      <li class="f-sellYours-processStep"><span class="f-sellYours-processStep-label">Vous <b>mettez en vente</b></span></li>
+      <li class="f-sellYours-processStep"><span class="f-sellYours-processStep-label">Un client <b>achète votre produit</b></span></li>
+      <li class="f-sellYours-processStep"><span class="f-sellYours-processStep-label">Vous <b>expédiez votre produit</b></span></li>
+      <li class="f-sellYours-processStep"><span class="f-sellYours-processStep-label">Vous <b>êtes payés</b></span></li>
+    </ol>
+    <div class="f-sellYours-actions">
+      <a class="ff-button ff-button--greenYellow ff-button--medium ff-button--minWidth" href="https://mp.fnac.com/vendre/pro">
+        <span class="ff-button-label">Revendre un produit</span>
+      </a>
+      <a class="f-sellYours-readMoreLink" href="https://www.fnac.com/Guides/marketplace/vente-et-revente/default.aspx">En savoir plus</a>
+    </div>
+  </div>
+
+</div>
+
+
+  </section>
+
+    <section class="f-productVariousData js-articleDetails">
+
+        
+        <ul class="f-productVariousData-tabs js-articleTabsVariousData">
+
+            
+                <li class="f-productVariousData-tabItem" data-tabtarget="tabSummary">
+                    <span class="f-productVariousData-tabTitle f-productVariousData-tabTitle--selected">Résumé</span>
+                </li>
+                            <li class="f-productVariousData-tabItem" data-tabtarget="tabProductDetails">
+                    <span class="f-productVariousData-tabTitle ">Détails produits</span>
+                </li>
+            <li class="f-productVariousData-tabItem whide" data-tabtarget="tabGuarantees">
+                <span class="f-productVariousData-tabTitle">Garanties</span>
+            </li>
+            
+
+            
+            <li class="f-productVariousData-tabItem whide" data-tabtarget="tabAccessoriesIncluded">
+                <span class="f-productVariousData-tabTitle">Accessoires inclus</span>
+            </li>
+            
+
+        </ul>
+
+        
+        <ul class="f-productVariousData-contents">
+
+            
+                <li class="f-productVariousData-content " id="tabProductDetails">
+
+                    
+                    <table class="f-productDetails-table">
+                                <tr class="f-productDetails-row">
+                                    
+                                        <td class="f-productDetails-cell"><span class="f-productDetails-cellValue">Date de parution</span></td>
+                                        <td class="f-productDetails-cell">
+                                                    <b class="f-productDetails-cellValue">septembre 2005 </b>
+                                        </td>
+                                </tr>
+                                <tr class="f-productDetails-row">
+                                    
+                                        <td class="f-productDetails-cell"><span class="f-productDetails-cellValue">Editeur</span></td>
+                                        <td class="f-productDetails-cell">
+                                                    <b class="f-productDetails-cellValue"><a class="f-productDetails-celllink" href="https://www.fnac.com/e34949/Ellipses">Ellipses</a> </b>
+                                        </td>
+                                </tr>
+                                <tr class="f-productDetails-row">
+                                    
+                                        <td class="f-productDetails-cell"><span class="f-productDetails-cellValue">Collection</span></td>
+                                        <td class="f-productDetails-cell">
+                                                    <b class="f-productDetails-cellValue"><a class="f-productDetails-celllink" href="https://www.fnac.com/c81724/Controle-Continu">Controle Continu</a> </b>
+                                        </td>
+                                </tr>
+                    </table>
+
+                    <p class="f-productVariousData-actions">
+
+                        
+                        <a class="ff-button ff-button--medium ff-button--grey ff-button--outline ff-button--minWidth js-scrollToStrate" href="#specifications">
+                            <span class="ff-button-label">Voir toutes les caractéristiques</span>
+                        </a>
+
+                    </p>
+
+
+                    
+
+                </li>
+            <li class="f-productVariousData-content whide" id="tabGuarantees">
+                <div class="">
+                </div>
+            </li>
+            
+
+            
+            <li class="f-productVariousData-content whide" id="tabAccessoriesIncluded">
+                <div class="">
+                </div>
+            </li>
+            
+
+            
+                <li class="f-productVariousData-content f-productVariousData-content--active" id="tabSummary">
+                    <div class="f-productSummary js-ProductSummary">
+                        
+                        <p class="f-productSummary-paragraph">
+                            <span class="js-ProductSummary-truncate is-truncated">Dans les ouvrages de la collection CONTRÔLE CONTINU vous trouverez : des résumés de cours, pour réviser rapidement des exercices corrigés, variés et progressifs pour vous entraîner et tester vos connaissances des problèmes avec résolution pour se préparer efficacement aux contrôles écrits de votre classe.</span>
+
+
+
+                        </p>
+
+                        <div class="f-productVariousData-actions">
+
+                          
+                                                                                  <a class="f-productSummary-button f-productSummary-browse ff-button ff-button--medium ff-button--grey ff-button--outline ff-button--minWidth" href="https://static.fnac-static.com/multimedia/editorial/pdf/9782729824686.pdf" target="_blank">
+                                <span class="ff-button-label">Feuilleter</span>
+                              </a>
+                                                  </div>
+                    </div>
+                </li>
+
+        </ul>
+
+
+    </section>
+<section class="f-productStimuli">
+
+  
+    <div class="f-productStimuli-offer clearfix">
+      <IMG alt="Cahiers de vacances" src="https://static.fnac-static.com/multimedia/bandeaux/Livres%20bandeaux%202019/Murielle2019/ParascoDico2019/Cahiers%20de%20vacances/cahier-vacances-50.jpg">&nbsp; 
+<P class=titreStimuli>Retrouvez tous les&nbsp;<A href="https://livre.fnac.com/s63043/Scolaire-et-soutien-scolaire/Cahiers-de-vacances#BL=stiCahVac">cahiers de vacances</A></P>
+    </div>
+      </section>
+
+      </div>
+      <div class="f-productPage-colRight clearfix">
+
+
+<section class="f-productOffers js-articleOffers">
+  
+  <ul class="f-productOffers-tabs js-productOffersTab">
+    
+      <li class="f-productOffers-tab  js-fnacOffersTab" data-track-click='{"action":"MpFnacOffer"}'>
+        Prix Fnac
+        <span class="f-productOffers-tabLabel--price">&nbsp;</span>
+      </li>
+          <li class="f-productOffers-tab f-productOffers-tab--selected js-mpOffersTab" data-track-click='{"action":"MpAllOffer"}'>
+        <span>&nbsp;
+          6 occasions dès             <span class="f-productOffers-tabLabel--price">27<sup>&euro;72</sup></span>
+        </span>
+      </li>
+  </ul>
+  <ul class="f-productOffers-contents js-productOffersContent">
+    
+          <li class="f-productOffers-mpContent js-marketPlaceTabContent isActive">
+
+        <div class="f-productOffers-mp clearfix js-marketPlaceBuyBox isActive">
+  <div class="f-productOffers-content">
+
+    
+
+
+
+
+    <div class="f-productOffer f-productOffer--options clearfix">
+      <div class="f-productOffer-option clearfix">
+
+        
+        
+        
+        <div class="f-productOffer-commercialOperation">
+          <label for="rb_0" class="f-productOffer-OptionLabel">
+
+            <span class="f-productOffer-optionType f-alertOffer f-alertOffer--medium f-alertOffer--standard">
+              <span class="f-alertOfferLabel">Prix standard </span>
+              
+            </span>
+
+            
+
+            
+          </label>
+        </div>
+
+        
+        
+        
+        <div class="f-productOffer-priceBox">
+          <div class="f-priceBox">
+            <span class="f-priceBox-price f-priceBox-price--reco checked">27<sup>&euro;72</sup></span>
+          </div>
+          <div class="f-priceBox-options">
+          </div>
+        </div>
+
+      </div>
+    </div>
+          <div class="f-buyShopBox-table">
+        <div class="f-buyShopBox-tableRow">
+          
+
+<div class="f-buyBox f-buyShopBox-tableCell js-ProductBuy">
+  <div class="f-buyBox-table">
+    <div class="f-buyBox-tableRow">
+      <div class="f-buyBox-tableCell">
+
+        
+          <div class="f-buyBox-availability f-buyBox-availabilityStatus-available">
+            <svg class="f-icon f-buyBox-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_044_check_02"></use>
+</svg>
+
+            <p><span class="f-buyBox-availabilityStatus-available">En stock</span> vendeur partenaire</p>
+          </div>
+                    <p class="f-buyBox-shipping">
+              Suivi :
+              <span class="f-buyBox-deliveryPrice">
+4<sup>&euro;99</sup>              </span>
+            </p>
+            <p class="f-buyBox-shipping">
+              Recommandé :
+              <span class="f-buyBox-deliveryPrice">
+5<sup>&euro;99</sup>              </span>
+            </p>
+      </div>
+    </div>
+
+    <div class="f-buyBox-tableRow">
+      <div class="f-buyBox-tableCell">
+
+        
+              <a class="ff-button ff-button--block ff-button--medium ff-button--black ff-button--outline js-ProductBuy-add"
+                 rel="nofollow"
+                 href="https://secure.fnac.com/basket/oneclick?offer=b1c4f167-c7c7-f2d3-da6f-48196109df62&amp;productId=1726468"
+                 data-url="https://secure.fnac.com/basket/oneclick?offer=b1c4f167-c7c7-f2d3-da6f-48196109df62&amp;productId=1726468"
+                 data-one-click="1"
+                 data-track-click='{"action":"AddToBasket","category":"1 clic","prid":"1726468","catalog":"1","oneClick":true}'
+                 data-tracking-price=""
+                 data-tracking-price-discount=""
+                 data-tracking-price-adh=""
+                 data-tracking-price-mp="27,72"
+                 data-tracking-prid="1726468"
+                 data-tracking-offerId="b1c4f167-c7c7-f2d3-da6f-48196109df62"
+                 data-tracking-catalogId="1">
+                <span class="ff-button-icon icon f-buttonIcon-oneClick icon_i_021_ocb"></span>
+                <span class="ff-button-label">Acheter en 1 clic</span>
+              </a>
+              <a class="ff-button ff-button--block ff-button--medium ff-button--orange js-ProductBuy-add"
+                 rel="nofollow"
+                 href="https://secure.fnac.com/basket/add?from=115&amp;offer=b1c4f167-c7c7-f2d3-da6f-48196109df62&amp;productId=1726468"
+                 data-url="https://secure.fnac.com/basket/add?from=115&amp;offer=b1c4f167-c7c7-f2d3-da6f-48196109df62&amp;productId=1726468"
+                 data-one-click="0"
+                 data-track-click='{"action":"AddToBasket","category":"MP BuyBox","prid":"1726468","catalog":"1"}'
+                 data-tracking-price=""
+                 data-tracking-price-discount=""
+                 data-tracking-price-adh=""
+                 data-tracking-price-mp="27,72"
+                 data-tracking-prid="1726468"
+                 data-tracking-offerId="b1c4f167-c7c7-f2d3-da6f-48196109df62"
+                 data-tracking-catalogId="1">
+                <span class="ff-button-icon icon f-buttonIcon-addBasket icon_i_049_basket"></span>
+                <span class="ff-button-label">Ajouter au panier</span>
+              </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <div class="f-shopBox f-buyShopBox-tableCell">
+                  
+                  <div class="f-shopBox-table">
+<div class="f-shopBox-tableRow">
+  <div class="f-shopBox-tableCell">
+    <dl class="f-shopBox-MPInfoSeller">
+        <a href="https://www.fnac.com/Le-Lieu-Bleu/srefE5000050-8B02-B26F-3C71-1B44224DEEBA">
+          <dt class="f-shopBox-MPInfoSellerItem f-shopBox-MPInfoSellerTitle">
+            
+            Le Lieu Bleu
+
+          </dt>
+        </a>
+      <dd class="f-shopBox-MPInfoSellerItem f-shopBox-MPInfoSellerGrade">
+        <span class="f-star f-star--medium f-star--blue S45"></span>
+      </dd>
+        <dd class="f-shopBox-MPInfoSellerItem f-shopBox-MPInfoSellerStatus"></dd>
+              <dd class="f-shopBox-MPInfoSellerItem f-shopBox-MPInfoSellerNumberSales">
+          (7947 ventes)
+        </dd>
+    </dl>
+
+    <dl class="f-shopBox-MPProductInfo">
+      <dt class="f-shopBox-MPProductInfoItem f-shopBox-MPProductInfoTitle">
+        État du produit
+      </dt>
+      <dd class="f-shopBox-MPProductInfoItem f-shopBox-MPProductInfoStatus f-shopBox-MPProductInfoStatus--goodState js-productInfoStatus">
+        Occasion
+        <span>- Bon &#233;tat</span>
+      </dd>
+            <dt class="f-shopBox-MPProductInfoItem f-shopBox-MPProductInfoTitle">
+        Pays d'expédition
+      </dt>
+      <dd class="f-shopBox-MPProductInfoItem">
+        France m&#233;tropolitaine
+      </dd>
+            <dt class="f-shopBox-MPProductInfoItem f-shopBox-MPProductInfoTitle">
+        Délai moyen de livraison
+      </dt>
+      <dd class="f-shopBox-MPProductInfoItem">
+        Sous 2 &#224; 3 jours
+      </dd>
+    </dl>
+
+
+
+
+
+      <div class="f-shopBox-MPProductInfoCommentary">
+        <p class="f-shopBox-MPProductInfoCommentary--title">
+          Commentaires du vendeur :
+        </p>
+        <p class="f-shopBox-MPProductInfoCommentary--content">
+          Ellipses Marketing, Broch&#233;, 2005  A &#233;t&#233; lu, traces d&#39;usage. Int&#233;rieur tr&#232;s bon &#233;tat. Exp&#233;dition par librairie parisienne avec emballage protecteur dans les 24h suivant votre commande.
+        </p>
+      </div>
+  </div>
+</div>
+<br>
+<div class="f-shopBox-tableRow">
+    <div class="f-shopBox-tableCell">
+            <a rel="nofollow" class="ff-button ff-button--block ff-button--medium ff-button--grey ff-button--outline" href="https://mp.fnac.com/question/offre/b1c4f167-c7c7-f2d3-da6f-48196109df62">
+                <span class="ff-button-label">Poser une question au vendeur</span>
+            </a>
+    </div>
+</div>
+
+                  </div>
+                </div>
+        </div>
+      </div>
+  </div>
+
+  
+</div>
+
+
+
+  <div class="f-otherOffers js-OtherOffersList">
+
+    <div class="f-titleFA-h5">
+      Toutes les offres
+      <svg class="f-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_266_informations_bold"></use>
+</svg>
+
+      <a class="f-titleFA-link" href="https://www.fnac.com/marketPlace/referencement_classement_offres">Voir critères de classement</a>
+    </div>
+
+    
+    <div class="f-otherOffers-container">
+
+      <ul class="f-otherOffers-list">
+          <li class="f-otherOffers-item js-OtherOffersItem js-displayMarketPlaceProduct" data-offerRef="b1c4f167-c7c7-f2d3-da6f-48196109df62" data-link="">
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--price">
+              <strong class="f-otherOffers-itemPrice">
+                27<sup>&euro;72</sup>
+              </strong>
+              <span class="f-otherOffers-shipping">Frais de port +4<sup>&euro;99</sup></span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--terms">
+              <b class="f-otherOffers-stock--available Offer-stockDispo">En stock</b>
+              <div class="f-otherOffers-productStatus f-otherOffers-productStatus--goodState">
+                Occasion
+                  <span>- Bon &#233;tat</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--sellerStatus">
+              <span class="f-otherOffers-sellerPicture">
+                <svg class="f-icon " aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_062_account"></use>
+</svg>
+
+              </span>
+              <span class="f-othersOthersOffersPrice-sellerStatus">Pro</span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--seller">
+              <span class="f-otherOffers-sellerName">
+                
+                Le Lieu Bleu
+              </span>
+              <div class="f-othersPrice-sellerRate">
+                <span class="f-star f-star--xsmall f-star--blue S45"></span>
+                <span class="hide">(7947)</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--action">
+              <button class="ff-button ff-button--small ff-button--block ff-button--grey ff-button--outline ff-button--opaque">Voir l'offre</button>
+            </div>
+          </li>
+          <li class="f-otherOffers-item js-OtherOffersItem js-displayMarketPlaceProduct" data-offerRef="06c62462-1205-eb9e-476a-f8206f756692" data-link="">
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--price">
+              <strong class="f-otherOffers-itemPrice">
+                27<sup>&euro;73</sup>
+              </strong>
+              <span class="f-otherOffers-shipping">Frais de port +4<sup>&euro;99</sup></span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--terms">
+              <b class="f-otherOffers-stock--available Offer-stockDispo">En stock</b>
+              <div class="f-otherOffers-productStatus f-otherOffers-productStatus--veryGoodState">
+                Occasion
+                  <span>- Tr&#232;s bon &#233;tat</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--sellerStatus">
+              <span class="f-otherOffers-sellerPicture">
+                <svg class="f-icon " aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_062_account"></use>
+</svg>
+
+              </span>
+              <span class="f-othersOthersOffersPrice-sellerStatus">Pro</span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--seller">
+              <span class="f-otherOffers-sellerName">
+                
+                Octo Fun Media
+              </span>
+              <div class="f-othersPrice-sellerRate">
+                <span class="f-star f-star--xsmall f-star--blue S45"></span>
+                <span class="hide">(31917)</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--action">
+              <button class="ff-button ff-button--small ff-button--block ff-button--grey ff-button--outline ff-button--opaque">Voir l'offre</button>
+            </div>
+          </li>
+          <li class="f-otherOffers-item js-OtherOffersItem js-displayMarketPlaceProduct" data-offerRef="ef584ec1-1117-49a7-b17a-028f274c9cd3" data-link="">
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--price">
+              <strong class="f-otherOffers-itemPrice">
+                29<sup>&euro;90</sup>
+              </strong>
+              <span class="f-otherOffers-shipping">Frais de port +4<sup>&euro;99</sup></span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--terms">
+              <b class="f-otherOffers-stock--available Offer-stockDispo">En stock</b>
+              <div class="f-otherOffers-productStatus f-otherOffers-productStatus--veryGoodState">
+                Occasion
+                  <span>- Tr&#232;s bon &#233;tat</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--sellerStatus">
+              <span class="f-otherOffers-sellerPicture">
+                <svg class="f-icon " aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_062_account"></use>
+</svg>
+
+              </span>
+              <span class="f-othersOthersOffersPrice-sellerStatus">Pro</span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--seller">
+              <span class="f-otherOffers-sellerName">
+                
+                  <span class="f-otherOffers-sellerName-icon f-popover-trigger tooltipFnacPlus-trigger js-popoverTopVendor">
+                    <img class="icon-topSeller js-popoverTopVendor-show" src="https://www.fnac.com/nav/images/topvendor/topvendor_10.png?static-sf=ENtRibrOntx6h_TJH1593SKJyYE1" />
+                    <span class="f-popover-container js-popoverTopVendor-container"></span>
+                  </span>
+                momox
+              </span>
+              <div class="f-othersPrice-sellerRate">
+                <span class="f-star f-star--xsmall f-star--blue S45"></span>
+                <span class="hide">(897588)</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--action">
+              <button class="ff-button ff-button--small ff-button--block ff-button--grey ff-button--outline ff-button--opaque">Voir l'offre</button>
+            </div>
+          </li>
+          <li class="f-otherOffers-item js-OtherOffersItem js-displayMarketPlaceProduct" data-offerRef="b6eda6a4-736f-6c9f-0cb2-4fdba564dc83" data-link="">
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--price">
+              <strong class="f-otherOffers-itemPrice">
+                34<sup>&euro;46</sup>
+              </strong>
+              <span class="f-otherOffers-shipping">Frais de port +4<sup>&euro;99</sup></span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--terms">
+              <b class="f-otherOffers-stock--available Offer-stockDispo">En stock</b>
+              <div class="f-otherOffers-productStatus f-otherOffers-productStatus--goodState">
+                Occasion
+                  <span>- Bon &#233;tat</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--sellerStatus">
+              <span class="f-otherOffers-sellerPicture">
+                <svg class="f-icon " aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_062_account"></use>
+</svg>
+
+              </span>
+              <span class="f-othersOthersOffersPrice-sellerStatus">Pro</span>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--seller">
+              <span class="f-otherOffers-sellerName">
+                
+                Octo Fun Media
+              </span>
+              <div class="f-othersPrice-sellerRate">
+                <span class="f-star f-star--xsmall f-star--blue S45"></span>
+                <span class="hide">(31917)</span>
+              </div>
+            </div>
+            <div class="f-otherOffers-itemCol f-otherOffers-itemCol--action">
+              <button class="ff-button ff-button--small ff-button--block ff-button--grey ff-button--outline ff-button--opaque">Voir l'offre</button>
+            </div>
+          </li>
+      </ul>
+
+      
+
+        <div class="f-otherOffers-toggleOffers js-displayListOffersButton">
+          Voir les 6 offres de nos partenaires
+        </div>
+
+    </div>
+
+  </div>
+      </li>
+  </ul>
+</section>
+
+      </div>
+
+<section class="f-productReassurance js-articleReassurance">
+  <ul class="f-productReassurance-list">
+
+
+    <li class="f-productReassurance-item js-articleMoneyBackGuaranteePopin">
+      <svg class="f-icon f-productReassurance-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_130_Fnac_Money_Back"></use>
+</svg>
+
+      <span class="f-productReassurance-label">Satisfait <b>ou remboursé</b></span>
+    </li>
+
+    <li class="f-productReassurance-item js-articleAfterSalesServicePopin">
+      <svg class="f-icon f-productReassurance-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_129_Fnac_Call_Center"></use>
+</svg>
+
+      <span class="f-productReassurance-label">SAV Fnac <b>7 jours sur 7</b></span>
+    </li>
+
+    <li class="f-productReassurance-item js-articleFreeStoreReturnPopin">
+      <svg class="f-icon f-productReassurance-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_094_Reload"></use>
+</svg>
+
+      <span class="f-productReassurance-label">Retour gratuit <b>en magasin</b></span>
+    </li>
+
+    <li class="f-productReassurance-item js-articleShippingAndPaymentPopin">
+      <svg class="f-icon f-productReassurance-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_126_Fnac_Card_Back"></use>
+</svg>
+
+      <span class="f-productReassurance-label">Paiement <b>à l'expédition</b></span>
+    </li>
+
+  </ul>
+</section>
+
+
+    </div>
+
+    <span class="clearfix"></span>
+    
+
+  <div class="js-ProductSticky">
+    <div class="ProductStickyContainer clearfix js-ProductStickyContainer">
+
+      <div class="js-specialeOffersLayerContent">
+        
+
+      </div>
+
+      
+      
+
+<div class="js-Layer">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="js-recoPartners"></div>
+<div class="js-recoPartners--crossSell"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="strate strate-greyBg js-strate--Fnac js-strate--MP" id="Opinions">
+    <div class="productStrateTop">
+        <h2 class="FAstrate-title">
+            <span class="FAstrate-title-color js-ProductSticky-title">
+            Le mot de l'éditeur
+            </span>
+            <span class="FAstrate-subtitle">Physique appliquée Term STI génie électronique</span>
+        </h2>
+    </div>
+
+    <div class="whiteContent">
+    Dans les ouvrages de la collection CONTRÔLE CONTINU vous trouverez :
+ des résumés de cours, pour réviser rapidement
+ des exercices corrigés, variés et progressifs pour vous entraîner et tester vos connaissances
+ des problèmes avec résolution pour se préparer efficacement aux contrôles écrits de votre classe.
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="strate strate-greyBg strate-NoTitle js-strate--Fnac js-strate--MP" id="adSense" style="padding-left:0 !important;padding-right:0 !important;">
+            <div class="js-ad-slot" data-inv-code="fnac_article_megaban" data-sizes="728x90 1000x90"></div>
+            <div id="sas_41538" style="text-align:center;" data-sas-page-name="www.fnac.com/livres-ebooks"></div>
+        </section>
+
+
+
+<section class="strate strate-greyBg anchor js-strate--Fnac js-strate--MP" id="specifications">
+    <!--  Affichage CaractÃ©ristiques de l'article -->
+    <div class="productStrateTop">
+        <h2 class="FAstrate-title"><span class="FAstrate-title-color js-ProductSticky-title">Caractéristiques détaillées</span><span class="FAstrate-subtitle">Physique appliquée Term STI génie électronique</span></h2>
+    </div>
+
+    
+
+    <div class="whiteContent">
+        
+        <ul class="Feature-list">
+            
+            <li class="Feature-item">
+                <span class="Feature-label"><span>Auteur</span></span>
+                <span class="Feature-desc"><span >T. Capdeville</span></span>
+            </li>
+            
+            <li class="Feature-item">
+                <span class="Feature-label"><span>Editeur</span></span>
+                <span class="Feature-desc"><span ><a href="https://www.fnac.com/e34949/Ellipses">Ellipses</a></span></span>
+            </li>
+            
+            <li class="Feature-item">
+                <span class="Feature-label"><span>Date de parution</span></span>
+                <span class="Feature-desc"><span >septembre 2005</span></span>
+            </li>
+            
+            <li class="Feature-item">
+                <span class="Feature-label"><span>Collection</span></span>
+                <span class="Feature-desc"><span ><a href="https://www.fnac.com/c81724/Controle-Continu">Controle Continu</a></span></span>
+            </li>
+            
+            <li class="Feature-item">
+                <span class="Feature-label"><span>EAN</span></span>
+                <span class="Feature-desc"><span >978-2729824686</span></span>
+            </li>
+            
+            <li class="Feature-item">
+                <span class="Feature-label"><span>ISBN</span></span>
+                <span class="Feature-desc"><span >2729824685</span></span>
+            </li>
+            
+            <li class="Feature-item">
+                <span class="Feature-label"><span>Illustration</span></span>
+                <span class="Feature-desc"><span >Pas d'illustrations</span></span>
+            </li>
+            
+        </ul>
+        
+    </div>
+
+        <!--  Affichage CaractÃ©ristiques du livre numerique -->
+        
+        <!--  Affichage Contenu du DVD -->
+        
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="strate js-ProductReview js-ProductReviewTranslate js-strate--Fnac js-strate--MP"
+    id="customerReviews"
+    data-see-more="Voir plus">
+    <div class="productStrateTop">
+        
+        <h2 class="FAstrate-title">
+            <span class="FAstrate-title-color js-ProductSticky-title">
+                Avis clients
+            </span>
+            <span class="FAstrate-subtitle">Physique appliquée Term STI génie électronique</span>
+        </h2>
+        
+        <a href="https://www.fnac.com/Help/utilisation-avis-internautes.aspx" class="f-review-linklegal">Conditions de publication des avis clients</a>
+
+        <div>
+            
+            <a href="https://secure.fnac.com/identity/gateway/signin?LogonType=Standard&PageRedir=https%3a%2f%2flivre.fnac.com%2fa1726468%2fT-Capdeville-Physique-appliquee-Term-STI-genie-electronique%23newReview" title="Laisser un avis" class="f-button f-button--orange f-review-button" data-track-click='{"action":"NewReview"}' rel="nofollow">
+                
+                <span class="f-button-content">Donner un avis</span>
+                <span class="f-button-content f-button-content--success">✔ Votre avis a été enregistré</span>
+                
+            </a>
+            
+        </div>
+
+    </div>
+
+    
+    
+    
+    <div class="f-review-header">
+        
+<div class="f-review-headerSplit f-review-headerSplit--onlyTwo">
+
+  <div class="f-review-headerBlock">
+    <div class="f-review-headerRate">
+      5<span class="f-review-headerRateTotal">/5</span>
+    </div>
+  </div>
+
+  <div class="f-review-headerBlock">
+    <ul class="rateList">
+      
+      <li class="rateList-item">
+        <span>1</span>
+        <svg class="f-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_097_Star"></use>
+</svg>
+
+
+        <div class="rateList-percentGraph">
+          <span class="rateList-percent" style="height: 0px">
+            <span class="rateList-rateCount">0 </span>
+          </span>
+        </div>
+      </li>
+      
+      <li class="rateList-item">
+        <span>2</span>
+        <svg class="f-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_097_Star"></use>
+</svg>
+
+
+        <div class="rateList-percentGraph">
+          <span class="rateList-percent" style="height: 0px">
+            <span class="rateList-rateCount">0 </span>
+          </span>
+        </div>
+      </li>
+      
+      <li class="rateList-item">
+        <span>3</span>
+        <svg class="f-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_097_Star"></use>
+</svg>
+
+
+        <div class="rateList-percentGraph">
+          <span class="rateList-percent" style="height: 0px">
+            <span class="rateList-rateCount">0 </span>
+          </span>
+        </div>
+      </li>
+      
+      <li class="rateList-item">
+        <span>4</span>
+        <svg class="f-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_097_Star"></use>
+</svg>
+
+
+        <div class="rateList-percentGraph">
+          <span class="rateList-percent" style="height: 0px">
+            <span class="rateList-rateCount">0 </span>
+          </span>
+        </div>
+      </li>
+      
+      <li class="rateList-item">
+        <span>5</span>
+        <svg class="f-icon icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_097_Star"></use>
+</svg>
+
+
+        <div class="rateList-percentGraph">
+          <span class="rateList-percent" style="height: 100px">
+            <span class="rateList-rateCount">3 </span>
+          </span>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+    
+  
+    
+    <div class="f-review-container js-ProductReviewList" id="reviewsList">
+        
+
+<div class="f-reviews-content">
+    <span class="js-reviews-notification f-reviews-notification" id="feedbackMessage"></span>
+    
+    
+
+    
+    <select class="js-reviewsList-sort js-select f-review-sort">
+      
+         <option value="created_at" >Avis les plus récents</option>
+      
+         <option value="num_positive_feedback" >Avis le plus utile</option>
+      
+         <option value="rating-desc" >Les meilleures notes</option>
+      
+         <option value="rating-asc" >Les moins bonnes notes</option>
+      
+    </select>
+
+    
+    
+
+<div class="f-review-reviewItem js-feedback" itemscope itemtype="http://schema.org/Review">
+    <div class="f-review-customerProfile">
+        
+        <div class="f-reviews-title f-reviews-title--noSpace" itemprop="author">
+            <a href="https://www.fnac.com/Carrai77/pr83e789f982c6e405d9d98bfd706c49ec1e78b21010803c85" rel="nofollow">
+                Carrai77
+            </a>
+        </div>
+        
+        
+        <p class="f-reviews-place">
+            Chelles<br>
+        </p>
+        
+
+    </div>
+    <div class="f-review-customerReview">
+        
+        
+    <span class="f-star f-star--medium S5" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+       <span itemprop="ratingValue">5</span>
+    </span>
+
+        
+        <span class="f-reviews-title f-reviews-title--noSpace" itemprop="name">
+            G&#233;nial</span>
+        <span class="f-reviews-date">Posté le 06 avr. 2009</span>
+
+        
+        <p class="f-reviews-txt js-ReviewText" itemprop="reviewBody">
+            Rien &#224; dire, les cours sont super bien fait (j&#39;ai du mal &#224; suivre avec mon prof mais la je comprend tout). On devrait remplacer nos manuels par ce livre on assureraient tous au bac !
+            
+        </p>
+        <hr />
+        
+        
+        
+        <div id="Feedback_3629723" class="feedbacklist f-review-feedback">
+            <p class="f-review-feedbackTxt">Cet avis vous a-t-il été utile ?</p>
+            <button data-commentid="3629723" data-feedback="1" class="f-button-outline f-reviews-rateButton--green f-reviews-rateButton feedback js-feedback-button">
+                oui (<span class="feedbackCount" id="nbFeedbackPositive_3629723">10</span>)
+            </button>
+            <button data-commentid="3629723" data-feedback="0" class="f-button-outline f-reviews-rateButton--red f-reviews-rateButton feedback js-feedback-button">
+                non (<span class="feedbackCount" id="nbFeedbackNegative_3629723">0</span>)
+            </button>
+        </div>
+
+        
+        <div class="f-review-report">
+            <a href="https://www.fnac.com/Comments/DeclareAbuseArticle.aspx?PreviousURL=https%253a%252f%252flivre.fnac.com%253a80%252fa1726468%252fT-Capdeville-Physique-appliquee-Term-STI-genie-electronique&PRID=1726468&reviewID=3629723" title="Signaler" rel="nofollow">
+                Signaler
+            </a>
+        </div>
+    </div>
+
+</div>
+
+                
+
+<div class="f-review-reviewItem js-feedback" itemscope itemtype="http://schema.org/Review">
+    <div class="f-review-customerProfile">
+        
+        <div class="f-reviews-title f-reviews-title--noSpace" itemprop="author">
+            <a href="https://www.fnac.com/Anonyme/prf4716b892caa4e867fad726cc1d274ef33782e6752ae74b5" rel="nofollow">
+                Anonyme
+            </a>
+        </div>
+        
+        
+        <p class="f-reviews-place">
+            Versailles<br>
+        </p>
+        
+
+    </div>
+    <div class="f-review-customerReview">
+        
+        
+    <span class="f-star f-star--medium S5" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+       <span itemprop="ratingValue">5</span>
+    </span>
+
+        
+        <span class="f-reviews-title f-reviews-title--noSpace" itemprop="name">
+            Tr&#232;s Bon</span>
+        <span class="f-reviews-date">Posté le 07 févr. 2006</span>
+
+        
+        <p class="f-reviews-txt js-ReviewText" itemprop="reviewBody">
+            Tr&#232;s bon livre avec des explications d&#233;taill&#233;es qui permettent de bien comprendre l&#39;ensemble des notions &#233;tudi&#233;es. Une partie cours claire puis une partie exercices corrig&#233;s class&#233;s par ordre de difficult&#233; : tous les &#233;l&#232;ves de STI electronique y trouveront leur compte. Livre &#224; conseiller.
+            
+        </p>
+        <hr />
+        
+        
+        
+        <div id="Feedback_3161291" class="feedbacklist f-review-feedback">
+            <p class="f-review-feedbackTxt">Cet avis vous a-t-il été utile ?</p>
+            <button data-commentid="3161291" data-feedback="1" class="f-button-outline f-reviews-rateButton--green f-reviews-rateButton feedback js-feedback-button">
+                oui (<span class="feedbackCount" id="nbFeedbackPositive_3161291">7</span>)
+            </button>
+            <button data-commentid="3161291" data-feedback="0" class="f-button-outline f-reviews-rateButton--red f-reviews-rateButton feedback js-feedback-button">
+                non (<span class="feedbackCount" id="nbFeedbackNegative_3161291">0</span>)
+            </button>
+        </div>
+
+        
+        <div class="f-review-report">
+            <a href="https://www.fnac.com/Comments/DeclareAbuseArticle.aspx?PreviousURL=https%253a%252f%252flivre.fnac.com%253a80%252fa1726468%252fT-Capdeville-Physique-appliquee-Term-STI-genie-electronique&PRID=1726468&reviewID=3161291" title="Signaler" rel="nofollow">
+                Signaler
+            </a>
+        </div>
+    </div>
+
+</div>
+
+                
+
+<div class="f-review-reviewItem js-feedback" itemscope itemtype="http://schema.org/Review">
+    <div class="f-review-customerProfile">
+        
+        <div class="f-reviews-title f-reviews-title--noSpace" itemprop="author">
+            <a href="https://www.fnac.com/Anonyme/pr912737a0ec1f12940cf10d7566909cd17d87d5228fe81941" rel="nofollow">
+                Anonyme
+            </a>
+        </div>
+        
+        
+        <p class="f-reviews-place">
+            Tours<br>
+        </p>
+        
+
+    </div>
+    <div class="f-review-customerReview">
+        
+        
+    <span class="f-star f-star--medium S5" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+       <span itemprop="ratingValue">5</span>
+    </span>
+
+        
+        <span class="f-reviews-title f-reviews-title--noSpace" itemprop="name">
+            Bravo monsieur !!!</span>
+        <span class="f-reviews-date">Posté le 04 oct. 2005</span>
+
+        
+        <p class="f-reviews-txt js-ReviewText" itemprop="reviewBody">
+            Vos anciens &#233;l&#232;ves sont fiers de vous, on vous ach&#232;tera un exemplaire pour vous faire gagner un peu d&#39;argent et on vous le fera d&#233;dicacer ^^ ;)  Bonne continuation
+            
+        </p>
+        <hr />
+        
+        
+        
+        <div id="Feedback_3124553" class="feedbacklist f-review-feedback">
+            <p class="f-review-feedbackTxt">Cet avis vous a-t-il été utile ?</p>
+            <button data-commentid="3124553" data-feedback="1" class="f-button-outline f-reviews-rateButton--green f-reviews-rateButton feedback js-feedback-button">
+                oui (<span class="feedbackCount" id="nbFeedbackPositive_3124553">2</span>)
+            </button>
+            <button data-commentid="3124553" data-feedback="0" class="f-button-outline f-reviews-rateButton--red f-reviews-rateButton feedback js-feedback-button">
+                non (<span class="feedbackCount" id="nbFeedbackNegative_3124553">6</span>)
+            </button>
+        </div>
+
+        
+        <div class="f-review-report">
+            <a href="https://www.fnac.com/Comments/DeclareAbuseArticle.aspx?PreviousURL=https%253a%252f%252flivre.fnac.com%253a80%252fa1726468%252fT-Capdeville-Physique-appliquee-Term-STI-genie-electronique&PRID=1726468&reviewID=3124553" title="Signaler" rel="nofollow">
+                Signaler
+            </a>
+        </div>
+    </div>
+
+</div>
+
+                
+
+
+
+</div>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+
+<section class="strate text-hide" id="QandA">
+
+    
+    <div class="js-ProductSticky-title" style="position: absolute;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);">Questions et réponses</div>
+
+    <iframe id="QandAiframe" class="iframe js-qAndA-iframe js-iframe-resizer" src="https://cl.avis-verifies.com/medias/components/html/iframe/bb9c1568-9983-8894-8dff-3556a3378f73_iframe.html#?idWebsite=bb9c1568-9983-8894-8dff-3556a3378f73&token=0408abb2582c3c6c9151faca4837281334c43ac8&productId=1726468&productDescription=Physique+appliqu%c3%a9e+Term+STI+g%c3%a9nie+%c3%a9lectronique" style="min-height: 475px;"></iframe>
+
+</section>
+
+
+
+<section class="strate See-also js-strate--Fnac js-strate--MP">
+    <div class="productStrateTop">
+        <h2 class="FAstrate-title">
+            <span class="FAstrate-title-color js-ProductSticky-title">Voir Aussi</span>
+        </h2>
+    </div>
+
+    <ul class="See-alsoList">
+        
+        <li class="See-alsoItem">
+        
+                    <a href="https://livre.fnac.com/s1891/Scolaire-et-soutien-scolaire">Scolaire et soutien scolaire</a>
+                &gt;
+                
+                    <a href="https://livre.fnac.com/s93088/Scolaire-et-soutien-scolaire/Lycee-Enseignement-Technologique">Lycée Enseignement Technologique</a>
+                &gt;
+                
+                    <a href="https://livre.fnac.com/n244612/Scolaire-et-soutien-scolaire/Lycee-Enseignement-Technologique/STI2D-STI">STI2D / STI</a>
+                
+        </li>
+        
+    </ul>
+</section>
+
+
+</div>
+
+      <div class="Sticky js-Sticky">
+        <div class="Sticky-header">
+          <div class="Sticky-pics js-Sticky-pics"></div>
+            <div class="Sticky-buy js-Sticky-buy js-ProductBuy"
+                 data-product-id="1726468"
+                 data-catalog-id="1">
+            </div>
+        </div>
+        <ul class="Sticky-list js-Sticky-list"></ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+<div id="ctl00"></div>
+
+
+
+
+
+
+
+  </div>
+
+  
+  
+
+<div class="non-legacy">
+    
+
+    <footer id="footer" class="f-footer">
+
+        <ul class="f-footer__keypoint-list">
+          <li class="f-footer__keypoint-li">
+              <a class="f-footer__keypoint" href="https://www.fnac.com/Contact/Index?fromNodeId=4_1_3#bl=footer">
+                  <svg class="f-icon f-footer__keypoint-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_130_Fnac_Money_Back"></use>
+</svg>
+
+                  <span class="">Heureux<br>
+                      ou rembours&eacute;</span>
+              </a>
+          </li>
+          <li class="f-footer__keypoint-li">
+              <a class="f-footer__keypoint" href="http://selfservice.fnac.com/selfservice_FR/template.do?id=13294&name=Retourner+mon+produit">
+                  <svg class="f-icon f-footer__keypoint-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_128_Fnac_Fnac_Store"></use>
+</svg>
+
+                  <span class="">Retour simplissime<br>
+                      et gratuit en magasin</span>
+              </a>
+          </li>
+          <li class="f-footer__keypoint-li">
+              <a class="f-footer__keypoint" href="https://www.fnac.com/choisir-carte">
+                  <svg class="f-icon f-footer__keypoint-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_192_Fnac_card-adherent"></use>
+</svg>
+
+                  <span class="">Carte Fnac : &eacute;conomiser toute<br>
+                      l'ann&eacute;e et en abuser ;)</span>
+              </a>
+          </li>
+          <li class="f-footer__keypoint-li">
+              <a class="f-footer__keypoint" href="https://www.fnac.com/Service/default.aspx#bl=footer">
+                  <svg class="f-icon f-footer__keypoint-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_129_Fnac_Call_Center"></use>
+</svg>
+
+                  <span class="">Service client&nbsp;: 0892&nbsp;35&nbsp;04&nbsp;05<br>du lundi au samedi (9h-19h30)<br>(service 0,40&euro;/min + prix appel)</span>
+              </a>
+          </li>
+          <li class="f-footer__keypoint-li">
+              <a class="f-footer__keypoint" href="https://www.fnac.com/conseils-experts/#bl=footer">
+                  <svg class="f-icon f-footer__keypoint-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_080_Help"></use>
+</svg>
+
+                  <span class="">Conseils et tests techniques<br>
+                      des (supers) experts Fnac</span>
+              </a>
+          </li>
+        </ul>
+
+        <div class="f-footer__featured">
+          <a href="https://www.fnac.com/" class="f-footer-homepage" aria-label="fnac.com"><svg class="f-icon f-footer-homepage__icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_logo_fnac"></use>
+</svg>
+</a>
+
+          <div class="f-footer__featured-grp f-footer__featured-grp--2">
+            
+            <a class="f-footer__featured-grp-item f-footer__featured-link" href="https://secure.fnac.com/account/alerting">
+                <svg class="f-icon f-footer__featured-link-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_086_Mail"></use>
+</svg>
+
+                <span class="f-footer__featured-link-text">
+                    <b>Les indispensables alertes Fnac</b>
+                    <br>
+                    Les abonn&eacute;s ne savent plus s'en passer. Et vous ?
+                </span>
+            </a>
+            
+            <div class="f-footer__featured-grp-item f-footer__featured-grp-item--network">
+                <ul class="f-footer__featured-network-list">
+                    <li class="f-footer__featured-network-item"><a class="f-footer__featured-network-link" target="_blank" href="https://www.fnac.com/Redirect.ashx?url=https%3A%2F%2Finstagram.com%2Ffnac_officiel" aria-label="Instagram"><svg class="f-icon f-footer__featured-network-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_136_instagram"></use>
+</svg>
+</a></li>
+                    <li class="f-footer__featured-network-item"><a class="f-footer__featured-network-link" target="_blank" href="https://www.fnac.com/Redirect.ashx?url=http%3A%2F%2Fwww.facebook.com%2Ffnac" aria-label="Facebook"><svg class="f-icon f-footer__featured-network-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_065_facebook"></use>
+</svg>
+</a></li>
+                    <li class="f-footer__featured-network-item"><a class="f-footer__featured-network-link" target="_blank" href="https://www.fnac.com/Redirect.ashx?url=https%3A%2F%2Ftwitter.com%2Ffnac" aria-label="Twitter"><svg class="f-icon f-footer__featured-network-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_002_twitter"></use>
+</svg>
+</a></li>
+                    <li class="f-footer__featured-network-item"><a class="f-footer__featured-network-link" target="_blank" href="https://youtube.com/user/fnac" aria-label="Youtube"><svg class="f-icon f-footer__featured-network-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_001_youtube"></use>
+</svg>
+</a></li>
+                    <li class="f-footer__featured-network-item"><a class="f-footer__featured-network-link" target="_blank" href="https://www.fnac.com/Redirect.ashx?url=https%3A%2F%2Flinkedin.com%2Fcompany%2Ffnac-pro" aria-label="Linkedin"><svg class="f-icon f-footer__featured-network-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_138_linkedin"></use>
+</svg>
+</a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="f-footer__featured-grp">
+            
+            <a class="f-footer__featured-grp-item f-footer__featured-link" href="https://www.fnac.com/Guides/Telephonie/applis-mobile/default.aspx#bl=footer">
+                <svg class="f-icon f-footer__featured-link-icon" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_082_iPadiPhone"></use>
+</svg>
+
+                <span class="f-footer__featured-link-text">
+                    <b>Meilleure appli e-commerce de l'ann&eacute;e</b>
+                    <br>
+                    &Eacute;lue par les internautes et par des professionnels tr&egrave;s s&eacute;rieux ;)
+                </span>
+            </a>
+            
+            <a class="f-footer__featured-grp-item f-footer__featured-link" href="http://www.labclientfnac.com/" target="_blank">
+                <svg class="f-icon f-footer__featured-link-icon f-footer__featured-link-icon--lab" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_logo_lab-client-fnac"></use>
+</svg>
+
+                <span class="f-footer__featured-link-text">
+                    <b>Rejoignez le Lab'client Fnac</b>
+                    <br>
+                    Imaginons ensemble la Fnac de demain
+                </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="f-footer__places">
+            <div class="f-footer__places-grps">
+
+                <div class="f-footer__places-grp">
+                    <p class="f-footer__places-title">&Agrave; PROPOS</p>
+                    <ul class="f-footer__places-list">
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Help/cgv-fnac-marketplace#bl=footer" rel="nofollow">Conditions g&eacute;n&eacute;rales de la Marketplace</a></li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Help/cgv-fnac#bl=footer" rel="nofollow">
+                              Conditions g&eacute;n&eacute;rales de ventes
+                          </a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/OrderPipe/dataProtect.aspx#bl=footer" rel="nofollow">Donn&eacute;es personnelles</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/entreprise/mentions_legales.aspx#bl=footer" rel="nofollow">Mentions l&eacute;gales</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                        <a class="f-footer__places-link" href="https://www.fnac.com/Contact/Index?fromNodeId=9#bl=footer">Notifier un contenu illicite</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Help/fnaccom-cookies.aspx#bl=footer" rel="nofollow">Cookies</a>
+                      </li>
+                      <li class="f-footer__places-li">
+                        <a class="f-footer__places-link" href="https://www.fnac.com/Help/utilisation-avis-internautes.aspx#bl=footer" rel="nofollow">Conditions de publication des avis</a>
+                      </li>
+                      <li class="f-footer__places-li">
+                        <a class="f-footer__places-link" href="https://fr.avis-verifies.com/avis-clients/fnac.com" target="_blank">Avis Fnac</a>
+                      </li>
+                      <li class="f-footer__places-li">
+                         <a class="f-footer__places-link" href="https://www.fnac.com/marketPlace/referencement_classement_offres">Voir crit&egrave;res de classement</a>
+                      </li>
+                      
+                    </ul>
+                </div>
+
+                
+                <div class="f-footer__places-grp">
+                    <p class="f-footer__places-title">AIDE, SAV & SERVICES</p>
+                    <ul class="f-footer__places-list">
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Service/default.aspx#bl=footer">SAV</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Contact" rel="nofollow" target="_blank">
+                              Besoin d'aide ?
+                          </a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/guides/common/reprise/default.aspx#bl=chArgus" rel="nofollow" target="_blank">Argus reprise</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/s439951/E-cartes-cadeaux#bl=footer" rel="nofollow">Cartes cadeaux Fnac</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/affiliates/accueil.aspx#bl=footer">Affiliation</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Advertiser/Registration.aspx#bl=footer">Publicit&eacute;</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://fnacdartymarketplace.com" target="_blank">Vendre sur la Marketplace Fnac</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Guides/marketPlace/vendeurs-partenaires-fnac/default.aspx#bl=footer">D&eacute;couvrez la Marketplace</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/recyclage#bl=footer">Reprise d'anciens mat&eacute;riels</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://boutique.wefix.net/" target="_blank">R&eacute;paration de smartphones</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/phishing#bl=footer">S&eacute;curit&eacute;</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/google-assistant#bl=footer">Google assistant</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/Help/cgu-pay-go#bl=footer">Conditions g&eacute;n&eacute;rales d'utilisation Fnac Pay&Go</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://passfnacdarty.com">Pass Partenaires</a>
+                      </li>
+					            
+                      <li class="f-footer__places-li">
+                          <a class="f-footer__places-link" href="https://www.fnac.com/unidays#bl=footer">Unidays</a>
+                      </li>
+                    </ul>
+                </div>
+
+                
+                <div class="f-footer__places-grp">
+                    <p class="f-footer__places-title">LE GROUPE FNAC DARTY</p>
+                    <ul class="f-footer__places-list">
+                      <li class="f-footer__places-li"><a class="f-footer__places-link" target="_blank" href="http://www.fnacdarty.com/">Qui sommes nous ?</a></li>
+                      <li class="f-footer__places-li"><a class="f-footer__places-link" target="_blank" href="https://recrutement.fnacdarty.com/">Recrutement</a></li>
+                      <li class="f-footer__places-li"><a class="f-footer__places-link" target="_blank" href="http://www.fnacdarty.com/nos-engagements/respecteux-de-lenvironnement/">D&eacute;veloppement durable</a></li>
+                      <li class="f-footer__places-li"><a class="f-footer__places-link" href="https://www.fnac.com/darty#bl=footer">Groupe Fnac Darty</a></li>
+                      
+                      
+                    </ul>
+                </div>
+
+                
+            </div>
+
+
+            <a class="f-footer__places-link f-footer__payment-mean-link" href="https://secure.fnac.com/Contact/Index?fromNodeId=1_1_5" rel="nofollow">
+              <ul class="f-footer__payment-mean-list">
+                <li class="f-footer__payment-mean-li"><svg class="f-icon f-footer__payment-mean" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_275_visa"></use>
+</svg>
+</li>
+                <li class="f-footer__payment-mean-li"><svg class="f-icon f-footer__payment-mean" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_273_MaestroMono"></use>
+</svg>
+</li>
+                <li class="f-footer__payment-mean-li"><svg class="f-icon f-footer__payment-mean" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_272_MastercardMono"></use>
+</svg>
+</li>
+                <li class="f-footer__payment-mean-li"><svg class="f-icon f-footer__payment-mean" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_270_CB"></use>
+</svg>
+</li>
+                <li class="f-footer__payment-mean-li"><svg class="f-icon f-footer__payment-mean" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_269_american-express"></use>
+</svg>
+</li>
+                <li class="f-footer__payment-mean-li"><svg class="f-icon f-footer__payment-mean" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_271_ecard"></use>
+</svg>
+</li>
+                <li class="f-footer__payment-mean-li"><svg class="f-icon f-footer__payment-mean" aria-hidden="true" role="img" focusable="false">
+  <use xlink:href="https://www.fnac.com/assets/dist/svg/symbols.svg?static-sf=FS1OCrjL7kgdQevLes_XVadaOnI1#icon_i_274_paypalMono"></use>
+</svg>
+</li>
+              </ul>
+              <p class="f-footer__payment-mean-more">En savoir plus</p>
+            </a>
+
+            <p>
+                <a class="f-footer__places-link" href="https://www.fnac.com/Navigation/plan.aspx#bl=footer">Plan du site</a> <small>&copy; Fnac 2019</small>
+            </p>
+
+            
+            <div class="f-footer__places-affix">
+                <p class="f-footer__places-affix-text">Et aussi :</p>
+                <ul class="f-footer__places-affix-list">
+                  <li class="f-footer__places-affix-li"><a class="f-footer__places-link" href="https://www.fnac.com/noel#bl=FooterNoel">No&euml;l</a></li>
+                  <li class="f-footer__places-affix-li"><a class="f-footer__places-link" href="https://www.fnac.com/soldes#bl=FooterSoldes">Soldes</a></li>
+                  <li class="f-footer__places-affix-li"><a class="f-footer__places-link" href="https://www.fnac.com/black-friday#bl=FooterBF">Black Friday</a></li>
+                  <li class="f-footer__places-affix-li"><a class="f-footer__places-link" href="https://www.fnac.com/Kobo-by-Fnac/shi433378/w-4#bl=FooterKobo">Kobo</a></li>
+                  <li class="f-footer__places-affix-li"><a class="f-footer__places-link" href="https://www.fnac.com/french-days#bl=footer">Les French Days</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+  
+  
+    
+      
+
+
+
+
+    <script>var s_account='fnaccomprod',s_trackingServer='metrics.fnac.com',s_trackingServerSecure='smetrics.fnac.com'</script>
+    <script src="https://www.fnac.com//static-proxy/omniture/script.js"></script><script>(function () { if (!window.s) return; s.charSet = "UTF-8"; s.pageType = s.campaign = s.state = s.zip = "";s.charSet="UTF-8";s.pageName="FA:LIV:Fiche Article";s.server="FCS1WPWEBFR1";s.channel="Produits";s.linkInternalFilters="fnac.com";s.pageType="";s.prop20="";s.prop21="";s.campaign="";s.state="";s.zip="";s.events="prodView,event2,event82";s.products=";1726468;;;;eVar48=7-1-0|eVar39=Non applicable";s.purchaseID="";s.eVar1="";s.eVar2="";s.eVar3="1";s.eVar4="";s.eVar5="";s.eVar6="";s.eVar12="";s.eVar15="";s.eVar17="";s.eVar19="";s.eVar36="";s.eVar37="";s.eVar39="Non applicable";s.eVar45="KISS";s.eVar48="7-1-0";s.eVar56="";s.eVar82="";s.prop8="";s.prop57="Non identifie";s.prop56="";s.prop51="Web Desktop";s.prop1="Livre";s.prop40="Fiche Article";s.prop49="FA:LIV:Physique appliquée Term STI génie électronique";s.eVar82 = s.getQueryParam('omnsearchpos');if(document.referrer){var params=location.hash.substr(1).split("&").reduce(function(result,pair){var parts=pair.split("=");result[parts[0].toLowerCase()]=decodeURIComponent(parts.slice(1).join("="));return result},{});if("st"in params&&"ct"in params&&"t"in params){s.prop10=s.eVar10=params.st;s.prop13=params.ct;s.eVar2="search";s.eVar13="D=c13";s.eVar42="D=v2";if(params.t==="c"){s.eVar71="autocompletion:categorie";}else{s.linkTrackVars="eVar2";s.eVar71="autocompletion:produit";s.events="prodView,event2"}}}performance.mark&&performance.mark("adobedtm-write-start");var a=s.t();a&&document.write(a);performance.mark&&performance.mark("adobedtm-write-end");performance.measure&&performance.measure("adobedtm-write","adobedtm-write-start","adobedtm-write-end")})();window._satellite&&_satellite.pageBottom()</script>
+
+
+
+      
+
+
+
+
+<script>var tc_vars={"arbo_niv1":"Livre","arbo_niv2":":Fiche Article","arbo_niv3":"","arbo_niv4":"","arbo_niv5":"","arbo_niv6":"","page_name":"FA:LIV:Fiche Article","template_type":"fiches","template_name":"13_fiches_fiche_article_pe","nav_typvt":1,"nav_support":1,"nav_ip":"160.178.165.110","nav_origine":"","nav_objectid":"1726468","nav_pathid":"1","taxonomy":"1\u003e1431374\u003e9477857","env_language":"fr-FR","env_country":"FR","server":"FCS1WPWEBFR1","environment":"FR-PRD_Fnaccom","user_id":"05d6f2fe4-5bb5-46fa-ad61-1121372cb964","user_segment":"Non-Adherent","user_segment_type":"","user_age":"","user_gender":"","user_subscription_date":"","user_subscription_newsletter":"","user_crm_uid":"","user_m":"","user_auth":0,"express_plus":"","eligibility_express_plus_trial":"","search_type":"","list_products":[],"product_unitprice_ati":"27.72","product_discount_ati":"27.72","product_unitprice_tf":"","product_discount_tf":"","product_currency":"EUR","product_trademark":"","product_url_page":"https://livre.fnac.com/a1726468/T-Capdeville-Physique-appliquee-Term-STI-genie-electronique#newReview","product_picture_url":"https://static.fnac-static.com/multimedia/Images/FR/NR/04/58/1a/1726468/1508-1/tsp20130516170807/Physique-appliquee-Term-STI-genie-electronique.jpg","product_breadcrumb_id":"11001","product_name":"Physique appliquée Term STI génie électronique","product_id":"1726468","product_ref":"1","product_ref_id":"1-1726468","product_stock":"no","product_category":"Fcom","product_vendor":"Fnac","product_isbundle":"no","product_rating":"5","product_unitpricemp":"27,72","product_unitprice":"11,20","product_unitprice_discount":"","product_unitprice_adherent":"","product_offrebuybox":3,"product_pricemode":1,"product_availabilitype":2,"product_productflagchoosebox":1,"product_availability":"7","cart_id":"","order_id":"","order_amount":"","order_amount_ati":"","order_amount_wt":"","order_amount_ati_with_sf":"","order_amount_tf_with_sf":"","order_currency":"","order_pay_method":"","order_new_client":"","order_nb_products":0,"order_promo_code":"","order_shipping_method":"","orderUserRefs":"","order_state":"","order_ship_ati":"","order_ship_tf":"","order_tax":"","order_zip":"","order_products":[]}</script>
+
+
+<script src="https://www.fnac.com/static-proxy/tagcommander/desktop_1.js" defer></script>
+
+
+
+
+
+
+
+    
+
+  
+
+
+
+<script>var FnacAnalytics ={"arbo_niv1":"Livre","arbo_niv2":":Fiche Article","arbo_niv3":"","arbo_niv4":"","arbo_niv5":"","arbo_niv6":"","page_name":"FA:LIV:Fiche Article","env_language":"fr-FR","env_country":"FR","user_id":"","user_segment":"Non-Adherent","user_segment_type":"","user_age":"","user_gender":"","user_subscription_date":"","user_subscription_newsletter":"","user_sid":"","express_plus":"","eligibility_express_plus_trial":"","product_unitprice_ati":"","product_discount_ati":"","product_unitprice_tf":"","product_discount_tf":"","product_currency":"EUR","product_trademark":"","product_url_page":"","product_picture_url":"","product_breadcrumb_id":"","product_id":"1726468","product_ref_id":"1-1726468","cart_id":"","order_id":"","order_amount":"","order_amount_ati_with_sf":"","order_amount_tf_with_sf":"","order_currency":"","order_new_client":"","order_nb_products":0,"order_promo_code":"","order_shipping_method":""}</script>
+
+
+
+
+  
+
+  <script src="https://www.fnac.com/static-proxy/smartadserver/script.js" defer id="smartad" data-default-site-id="83012"></script>  <script>
+    document.addEventListener("DOMContentLoaded",function(){if(window.sas){var f=document.getElementById("smartad").getAttribute("data-default-site-id")||"";sas.setup({networkid:1574,domain:"https://www3.smartadserver.com",async:!0,renderMode:0});var k={"\u00e8":"e","\u00e9":"e","\u00ea":"e","\u00e0":"a","\u00e1":"a","\u00e7":"c"," ":"-",",":"-","&":"ET","!":"-","?":"-","/":"-","(":"-",")":"-",":":"-","'":"-","=":"-"},d="user_segment;user_segment_type;user_age;express_plus;eligibility_ express_plus_trial;arbo_niv1;arbo_niv2;arbo_niv3;arbo_niv4;arbo_niv5;arbo_niv6;page_name;order_amount;order_new_client;order_shipping_method;order_promo_code;order_nb_products;product_id;product_ref_id".split(";").map(function(a){return window.FnacAnalytics&&FnacAnalytics[a]?a+"="+FnacAnalytics[a].replace(/[^\w]/g,function(a){return k[a]||a}):null}).filter(function(a){return a});d.push("ddiff="+encodeURIComponent(window.location.hostname));var g=d.join(";"),e=[];Array.prototype.slice.call(document.querySelectorAll("script[id^=sas-group_]")).forEach(function(a){try{var c=JSON.parse(a.text)}catch(b){console.error(b);return}c instanceof Array||(c=[c]);c.forEach(function(b){b.siteId=b.siteId||f;b.target=b.target||g;if(b.siteId)if(b.pageId||b.pageName){var c=b.formatId.split(",").filter(function(c){return null===document.getElementById("sas_"+c)?(console.warn('Smart Ad group="'+b.formatId+'": formatId '+c+" doesn't exist in this page",a),!1):!0});0===c.length?console.warn('Smart Ad group="'+b.formatId+'": No formatId available for that group',a):(b.formatId=c.join(),sas.call("onecall",b),e=e.concat(c),c.forEach(function(a){sas.render(a)}))}else console.warn('Smart Ad group="'+b.formatId+'": missing page id or page name',a);else console.warn('Smart Ad group="'+b.formatId+'": invalid site id',a)})});Array.prototype.slice.call(document.querySelectorAll("[id^=sas_]:not(script)")).forEach(function(a){var c=a.id.substr(4);if(!(0<=e.indexOf(c))){var b=a.getAttribute("data-sas-site-id")||f,d=a.getAttribute("data-sas-page-id")||"",h=a.getAttribute("data-sas-page-name")||"";b?d||h?sas.call("std",{siteId:b,pageId:d,formatId:c,target:g,pageName:h}):console.warn('Smart Ad format="'+c+'": missing page id or page name',a):console.warn('Smart Ad format="'+c+'": invalid site id',a)}});window.sasTarget=d}else console.error(new Error("Smart Ad Server load error"))},!1);
+
+  </script>
+
+</body>
+</html>
